@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>시드물</title>
+    <!-- swiper cdn -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"  />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <div class="inner">
+        <h1 class="logo">
+          <a href="index.html"><img src="images/logo.png" alt="시드물" /></a>
+        </h1>
+        <nav>
+          <ul class="gnb">
+            <li>
+              <a href="#">시드물 소개</a>
+              <ul class="sub_menu">
+                <li><a href="#">시드물이란?</a></li>
+                <li><a href="#">연혁/비전</a></li>
+                <li><a href="#">나눔/실천</a></li>
+                <li><a href="#">개발/품질관리</a></li>
+                <li><a href="#">오시는 길</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">카테고리</a>
+              <ul class="sub_menu">
+                <li><a href="#">제품별</a></li>
+                <li><a href="#">기능/고민별</a></li>
+                <li><a href="#">성분별</a></li>
+                <li><a href="#">베스트 아이템</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">이벤트</a>
+              <ul class="sub_menu">
+                <li><a href="#">사은품증정</a></li>
+                <li><a href="#">1+1 이벤트</a></li>
+                <li><a href="#">셋트할인</a></li>
+                <li><a href="#">제로마진</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">게시판</a>
+              <ul class="sub_menu">
+                <li><a href="#">자주묻는 질문</a></li>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">사용후기</a></li>
+                <li><a href="#">상품문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객지원</a>
+              <ul class="sub_menu">
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">주문내역</a></li>
+                <li><a href="#">적립금/쿠폰</a></li>
+                <li><a href="#">1:1 문의</a></li>
+                <li><a href="#">위시리스트</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="gnb_respon">
+            <li class="gnb_respon_hidden"><a href="#"><i class="fa-solid fa-bars"></i></a>
+    <!-- nav_gnb_respon -->
+              <ul class="nav_gnb_respon_show">
+                <li>
+                  <a href="#">시드물 소개</a>
+                  <ul class="sub_menu_show">
+                    <li><a href="#">시드물이란?</a></li>
+                    <li><a href="#">연혁/비전</a></li>
+                    <li><a href="#">나눔/실천</a></li>
+                    <li><a href="#">개발/품질관리</a></li>
+                    <li><a href="#">오시는 길</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">카테고리</a>
+                  <ul class="sub_menu_show">
+                    <li><a href="#">제품별</a></li>
+                    <li><a href="#">기능/고민별</a></li>
+                    <li><a href="#">성분별</a></li>
+                    <li><a href="#">베스트 아이템</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                  <ul class="sub_menu_show">
+                    <li><a href="#">사은품증정</a></li>
+                    <li><a href="#">1+1 이벤트</a></li>
+                    <li><a href="#">셋트할인</a></li>
+                    <li><a href="#">제로마진</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">게시판</a>
+                  <ul class="sub_menu_show">
+                    <li><a href="#">자주묻는 질문</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">사용후기</a></li>
+                    <li><a href="#">상품문의</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">고객지원</a>
+                  <ul class="sub_menu_show">
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">주문내역</a></li>
+                    <li><a href="#">적립금/쿠폰</a></li>
+                    <li><a href="#">1:1 문의</a></li>
+                    <li><a href="#">위시리스트</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+    <!-- nav_search -->
+            <li class="icon nav_search_icon"><a href="#"><img src="./images/icon_search-sm.png" alt="search"></a>
+              <form action="#" class="nav_search">
+                <label for="nav_search">
+                  <input type="text" placeholder="제품, 성분검색" id="nav_search" /> 
+                  <a href="#" class="icon icon_search"><img src="./images/icon_search-sm.png" alt="search"></a>
+                </label>
+              </form>
+            </li>
+            <li class="icon"><a href="#"><img src="./images/icon_cart-03.png" alt="cart"></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- slide -->
+    <section class="slide">
+      <ul class="slide-line">
+        <li class="slide_li_01">
+          <a href="#">
+              <div class="inner">
+                <div class="slide01 slide_back">
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="slide_li_02">
+            <a href="#">
+                <div class="inner">
+                <div class="slide02 slide_back">
+              </div>
+            </div>
+            </a>
+          </li>
+          <li class="slide_li_03">
+            <a href="#">
+              <div class="inner">
+                <div class="slide03 slide_back">
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="inner">
+      <!-- new_prod -->
+      <section class="new_prod">
+        <h3 class="title position_title">신제품</h3>
+        <ul class="product_line position_line">
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img new_prod01"></div>
+                <div class="sub_title">나노 트라넥사믹 블래미쉬 앰플 30ml</div>
+                <div class="price_line">
+                  <p class="sale">65%</p>
+                  <p class="ex_price">28,000원</p>
+                  <p class="price">9,800원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img new_prod02"></div>
+                <div class="sub_title">스킨소스 세라마이드 수분 오일 30ml</div>
+                <div class="price_line">
+                  <p class="sale">65%</p>
+                  <p class="ex_price">28,600원</p>
+                  <p class="price">10,000원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img new_prod03"></div>
+                <div class="sub_title">올리브 립 마스크 13ml</div>
+                <div class="price_line">
+                  <p class="sale hidden"></p>
+                  <p class="ex_price hidden"></p>
+                  <p class="price">4,300원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img new_prod04"></div>
+                <div class="sub_title">울트라 페이셜 판테놀 시카베리어 크림 ...</div>
+                <div class="price_line">
+                  <p class="sale">39%</p>
+                  <p class="ex_price">21,000원</p>
+                  <p class="price">12,800원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img new_prod05"></div>
+                <div class="sub_title">스킨소스 스테이블 비타민C 20 앰플 30ml</div>
+                <div class="price_line">
+                  <p class="sale">34%</p>
+                  <p class="ex_price">29,800원</p>
+                  <p class="price">19,800원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- best_item -->
+      <section class="best_item">
+        <h3 class="title position_title">베스트 아이템</h3>
+        <ul class="product_line position_line">
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img best_prod01"></div>
+                <div class="sub_title">마다가스카르 리얼 수분크림 80g</div>
+                <p class="price">23,800원</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img best_prod02"></div>
+                <div class="sub_title">민중기 EGF 앰플 30ml</div>
+                <p class="price">39,800원</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img best_prod03"></div>
+                <div class="sub_title">스킨소스 D-판테놀 앰플 30ml</div>
+                <p class="price">9,800원</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img best_prod04"></div>
+                <div class="sub_title">무기차단제 민중기 무기자 썬크림 80g</div>
+                <p class="price">16,400원</p>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img best_prod05"></div>
+                <div class="sub_title">나노 트라넥사믹 블래미쉬 앰플 30ml</div>
+                <p class="price">9,800원</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- search -->
+      <section class="search">
+        <h3 class="title position_title">인기 검색어</h3>
+              <div class="search_wrap">
+                <ul class="search_line">
+                    <div class="respon1">
+                        <li><a href="#">EGF</a></li>
+                        <li><a href="#">트러블</a></li>
+                        <li><a href="#">미백</a></li>
+                        <li><a href="#" class="font_small">안티에이징</a></li>
+                    </div>
+                    <div class="respon2">
+                        <li><a href="#">탄력</a></li>
+                        <li><a href="#">레티놀</a></li>
+                        <li><a href="#">장벽관리</a></li>
+                        <li><a href="#">속보습</a></li>
+                    </div>
+                </ul>
+                <ul class="search_line ">
+                    <div class="respon1">
+                        <li><a href="#">흔적</a></li>
+                        <li><a href="#">주름</a></li>
+                        <li><a href="#">각질관리</a></li>
+                        <li><a href="#">보습크림</a></li>
+                    </div>
+                    <div class="respon2">
+                        <li><a href="#" class="font_small">수분부족지성</a></li>
+                        <li><a href="#">판테놀</a></li>
+                        <li><a href="#">클렌징</a></li>
+                        <li><a href="#">모공</a></li>
+                    </div>
+                </ul>
+              </div>
+      </section>
+  
+      <!-- type -->
+      <section class="type">
+        <h3 class="title position_title">타입별 고민솔루션</h3>
+        <p class="type_line position_line">
+          <a href="#" class="type_title">여드름 / 트러블</a>
+          <a href="#" class="type_title">미백 / 흔적</a>
+          <a href="#" class="type_title">안티에이징 / 주름</a>
+          <a href="#" class="type_title">모공 / 피지 / 블랙헤드</a>
+          <a href="#" class="type_title">각질관리</a>
+        </p>
+        <ul class="product_line position_box">
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img type_prod01"></div>
+                <div class="sub_title">유황 수제비누 100g</div>
+                <div class="price_line">
+                  <p class="sale hidden">2%</p>
+                  <p class="ex_price hidden">13,000원</p>
+                  <p class="price">12,800원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img type_prod02"></div>
+                <div class="sub_title">진한 어성초 시카 에센셜 165ml</div>
+                <div class="price_line">
+                  <p class="sale">50%</p>
+                  <p class="ex_price">24,800원</p>
+                  <p class="price">12,400원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img type_prod03"></div>
+                <div class="sub_title">마다가스카르 리얼 수분크림 80g</div>
+                <div class="price_line">
+                  <p class="sale hidden">2%</p>
+                  <p class="ex_price hidden">24,200원</p>
+                  <p class="price">23,800원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="box">
+              <a href="#">
+                <div class="img type_prod04"></div>
+                <div class="sub_title">닥터트럽 클렌징 밀크 200ml/500ml</div>
+                <div class="price_line">
+                  <p class="sale">23%</p>
+                  <p class="ex_price">17,600원</p>
+                  <p class="price">13,600원</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- line_product -->
+      <section class="line_product">
+        <h3 class="title position_title">라인별 제품</h3>
+        <div class="swiper position_line">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="img line_img01"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="img line_img02"></div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="img line_img03"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <div class="material-icons"></div>
+        </div>
+        <div class="swiper-button-next">
+          <div class="material-icons"></div>
+        </div>
+      </section>
+  
+      <!-- event -->
+      <section class="event">
+        <h3 class="title position_title">이벤트</h3>
+        <ul class="event_line position_line">
+          <li>
+            <a href="#">
+              <div class="img event01"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img event02"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img event03"></div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="img event04"></div>
+            </a>
+          </li>
+        </ul>
+      </section>
+  
+      <!-- review -->
+      <section class="review">
+        <h3 class="title position_title">베스트 후기</h3>
+        <ul class="product_line position_line">
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="img review01"></div>
+                <div class="prod">
+                  <div class="prod_img">
+                    <img src="./images/fishherb_waterfall_cream.png" alt="review_prod" />
+                  </div>
+                  <div class="product_title">
+                    <p class="sub_title">어성초 수분크림 80ml</p>
+                    <div class="score">
+                      <p class="score01">평점</p>
+                      <p class="score02">4.5</p>
+                      <p class="score01">리뷰</p>
+                      <p class="score02">105개</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_title">
+                  <p class="star"></p>
+                  <p class="name">fe*****</p>
+                  <p class="date">2023-12-18</p>
+                </div>
+                <p class="review_text">예전 게시글에 댓글로 아이 여드* 근황 문의를 남겨주신 회원분들이 계셔서 겸사겸사 아이 이마를 오랫만에 들춰 보았습니다.</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="img review02"></div>
+                <div class="prod">
+                  <div class="prod_img">
+                    <img src="./images/ampoule-EGF.png" alt="review_prod" />
+                  </div>
+                  <div class="product_title">
+                    <p class="sub_title">민중기 프로폴리스 앰플 7500ppm</p>
+                    <div class="score">
+                      <p class="score01">평점</p>
+                      <p class="score02">4.9</p>
+                      <p class="score01">리뷰</p>
+                      <p class="score02">227개</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_title">
+                  <p class="star"></p>
+                  <p class="name">si******</p>
+                  <p class="date">2023-12-18</p>
+                </div>
+                <p class="review_text">2015년 고3때 여드* 때문에 알아보다가 시드물이라는 곳을 알게 되었어요! 시드물 덕분에 피부가 좋아져서 한동 안뜸 하다가 취직한 뒤로 스트레스, 회</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="img review03"></div>
+                <div class="prod">
+                  <div class="prod_img">
+                    <img src="./images/centella_essence.png" alt="review_prod" />
+                  </div>
+                  <div class="product_title">
+                    <p class="sub_title">병풀 에센스 50ml 심플 스킨케어</p>
+                    <div class="score">
+                      <p class="score01">평점</p>
+                      <p class="score02">4.8</p>
+                      <p class="score01">리뷰</p>
+                      <p class="score02">192개</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_title">
+                  <p class="star"></p>
+                  <p class="name">th******</p>
+                  <p class="date">2023-12-18</p>
+                </div>
+                <p class="review_text">안녕하세요 :) 저는 시드물 브랜드를 알고 쓴지는 꽤 되었지만 후기는 처음 남겨봐요! 그만큼 꽤 큰 효과를 봐서 다른분들도 써보셨으면 좋겠어요!!</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="img review04"></div>
+                <div class="prod">
+                  <div class="prod_img">
+                    <img src="./images/drtroub_cleansing_milk_h.png" alt="review_prod" />
+                  </div>
+                  <div class="product_title">
+                    <p class="sub_title">닥터트럽 클렌징 밀크 500ml</p>
+                    <div class="score">
+                      <p class="score01">평점</p>
+                      <p class="score02">4.9</p>
+                      <p class="score01">리뷰</p>
+                      <p class="score02">375개</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_title">
+                  <p class="star"></p>
+                  <p class="name">c**********</p>
+                  <p class="date">2024-01-24</p>
+                </div>
+                <p class="review_text">몇년동안 꾸준히 사용하고 있는 1차 세안제입니당!건성 피부 세안에 탁월하고 사용후에도 매끈매끈해요</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="box">
+                <div class="img review05"></div>
+                <div class="prod">
+                  <div class="prod_img">
+                    <img src="./images/essential_1_fishherb.png" alt="review_prod" />
+                  </div>
+                  <div class="product_title">
+                    <p class="sub_title">진한 어성초 시카 에센셜 165ml</p>
+                    <div class="score">
+                      <p class="score01">평점</p>
+                      <p class="score02">4.7</p>
+                      <p class="score01">리뷰</p>
+                      <p class="score02">86개</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_title">
+                  <p class="star"></p>
+                  <p class="name">ka*****</p>
+                  <p class="date">2023-12-18</p>
+                </div>
+                <p class="review_text">안녕하세요! 시드물 쓴지 1년정도 됐습니다. 어떤 화장품으로도 케어가 안되는 정도의 피부가 된 이후가 되어서야 시드물을 선택했습니다…</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <ul class="footer_menu1">
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">이용안내</a></li>
+        <li><a href="#">영상정보처리기기 운영/관리 방침</a></li>
+        <li><a href="#">미확인 입금</a></li>
+        <li><a href="#">무이자 할부 혜택</a></li>
+      </ul>
+      <div class="inner">
+        <div class="footer_line1">
+          <h1 class="logo">
+            <a href="index.html"><img src="./images/logo.png" alt="시드물" class="grayscale" /></a>
+          </h1>
+          <ul class="footer_menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용안내</a></li>
+            <li><a href="#">영상정보처리기기 운영/관리 방침</a></li>
+            <li><a href="#">미확인 입금</a></li>
+            <li><a href="#">무이자 할부 혜택</a></li>
+          </ul>
+          <div class="footer_menu_respon">
+            <a href="#" class="icon">
+              <i class="fa-solid fa-bars"></i>
+            </a></div>
+        </div>
+        <div class="footer_line2">
+          <ul class="footer_box">
+            <li>
+              <p>주식회사 시드물 대표 : 민병권 개인정보책임자 : 박소진</p>
+              <p>주소 : 대전시 중구 안영로 42(안영동)</p>
+              <p>대표메일 : help@sidmool.com 팩스 : 042-367-7989</p>
+              <p>사업자번호 : 305-81-94469 화장품 제조판매업 : 등록필증 제 1163호</p>
+              <p>통신판매신고번호 : 제2008-대전중구-0247호</p>
+              <p>건강기능식품일반판매업 : 제 2007-0233493 호 / 건강기능식품유통전문판매업 : 제 2012-0233418 호</p>
+            </li>
+            <li>
+              <ul class="footer_box2">
+                <li class="foot_line2_li">
+                  <p class="footer_title">BANK INFO</p>
+                  <p>예금주 : (주)시드물</p>
+                  <p>국민은행 : 460001-04-214514</p>
+                  <p>농협은행 : 355-0002-8749-13</p>
+                  <p>하나은행 : 643-910004-62604</p>
+                  <p>신한은행 : 100-027-169517</p>
+                  <p>우리은행 : 1005-902-241888</p>
+                  <p>우체국은행 : 310037-01-011233</p>
+                  <p>기업은행 : 143-122078-01-015</p>
+                  <p>부산은행 : 101-2047-1354-09</p>
+                </li>
+                <li class="foot_line2_li">
+                  <p class="footer_title">CS CENTER</p>
+                  <p>1577-9638</p>
+                  <p>(해외 : +82-42-716-0227)</p>
+                  <p>평일 : AM 9:00 - PM 17:00</p>
+                  <p>점심시간 : PM 12:00 - PM 13:30</p>
+                  <p>토,일요일, 공휴일은 휴무입니다.</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
